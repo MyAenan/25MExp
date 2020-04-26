@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Fan Made Exp Calculator for DelugeRPG">
+	<meta name="keywords" content="delugerpg, exp calculator, delugerpg exp, exact exp delugerpg">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Exp Calculator for DelugeRPG</title>
+	<link rel="shortcut icon" href="main.jpg" />
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link href="style.css?v=3" rel="stylesheet" media="screen">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" style="position:relative;top:-9px; color:#FFF;" href="#">
+           <img src="slowpoke.png" style="display:inline-block;"/>&nbsp;
+            Exp Calculator <small></small> for DelugeRPG</a> <small style="color:grey;position:relative;top:15px;">(beta ver. 20200422)</small>
+		</div>
+		<!-- <p class="navbar-text pull-right">
+			Based on <a href="https://www.delugerpg.net/viewtopic.php?f=6&t=4845">Psyduck's Exp Calculator</a>, 
+		</p> -->
+	</div>
+</nav>
+<div id="infobox" class="alert alert-info text-center">
+	Note: <b>This is "Unofficial/Fan made Exp Calculator for DelugeRPG (25M Exp) - <small>Based on <a href="https://psyduck.pkmn.pw/expcalc/" target="_blank" style="color:#F00;">Psyduck's Exp Calculator</a></small>".</b>
+   <br> It assumes you have already beaten all regions and that your pokemon is at level 100.
+	<br>You can battle any other trainers that give the same amount of exp as those in the suggested solution.
+    <br><small><u>Thanks to "Mr.Clean" for gathering data about exp on each trainers and wild pokemon.</u></small>
+</div>
+<div id="mainpage">
+	<div id="aside">
+		<form class="form-inline" id="entryform">
+			<div class="form-group">
+				<label for="currentExp">Current Exp</label>
+				<input type="number" class="form-control" id="currentExp" name="currentExp" value="0" min="100000" max="24999977" required style="width: 14em" >
+			</div>
+		  	<div class="form-group">
+				<label for="targetExp">Target Exp</label>
+				<input type="number" class="form-control" id="targetExp" name="targetExp" value="0" min="100023" max="25000000" required style="width: 14em" >
+			</div>
+		</form>
+		<div id="targetbox">
+			<b>Exp to target : </b> <span id="exp2target">0</span>
+		</div>
+		<table id="battletable" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Trainer</th>
+                    <th>Info</th>
+					<th>Battles</th>
+					<th>Exp</th>	
+					<th>Total</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total</th>
+                    <th></th>
+					<th></th>
+					<th></th>
+					<th id="bttotal" data-num="0">0</th>
+					<th></th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div id="bside">
+		
+	</div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
